@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formentrar.css" />
+    <link rel="stylesheet" href="css/TESTE.CSS">
+    <title>ADM | Cantinho</title>
+</head>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="before"></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <!--<i class="fas fa-bars"></i>-->
+                &#9776;
+            </label>
+            <label class="logo"><img src="imagens/logo.jpg" alt="" style="width: 130px; height: 100px;"></label> <!--<label class="logo">BravoBurger</label>-->
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="adm.html">Adm</a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        </span>
+                        <span class="text"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </span>
+                        <span class="text"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <br><br><br><br><br>
+
+    <form method="post" action="controle/ctr_funcionario.php">
+        <!-- post oculta e vai incorporado na pagina -->
+        <input type="hidden" name="validar"/>
+        <fieldset id="login">
+            <div class="title-icon">
+                <p id="idsignup">Login</p>
+                <img id="icone" src="imagens/imglogin.png" />
+            </div>
+        
+            <div class="inputs"> 
+                <p></p> 
+                <label for="cNome">Usuário</label> </br> 
+                <input type="text" name="txtLogin" id="cNome" maxlength="30" placeholder="Login" />
+            </div>
+            <div class="inputs"> 
+                <p></p> 
+                <label for="cSenha">Senha</label> </br> 
+                <input type="password" name="txtSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha"/>
+            </div>
+            <div class="inputs"> 
+                <p></p>
+                <label for="cMail">E-mail</label> </br> 
+                <input type="email" name="txtEmail" id="cMail" size="20" maxlength="40" placeholder="E-mail"/>     
+            </div>
+            
+            <div class="botao-centro">
+                <input type="submit" value="SIGN UP" id="botao" />
+            </div>
+
+            <div id="lembrete">
+                &nbsp;<input type="checkbox" name="tPed" id="cPed" checked/>
+                <label for="cPed"><span class="letter-size">Permanecer conectado</span></label> <br>
+                &nbsp;&nbsp;<a href="https://account.live.com/ResetPassword.aspx?mkt=PT-BR" target="_blank" id="linkpassword"><span class="letter-size">Esqueceu a senha?</span></a>
+            </div>
+        </fieldset>
+    </form>
+
+    <br><br>
+
+    <div class="rodape">
+        <h3>CANTINHO DA IRMÃS</h3>
+        <p><a href="#menu">Copyright &copy; 2022 | Luiz Ventura <!--<ion-icon  name="chevron-up-circle-outline" style="margin-top: 5px; color: white;"></ion-icon>--></a></p>
+    </div>
+</body>
+</html>

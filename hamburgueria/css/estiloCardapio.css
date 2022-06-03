@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Playfair+Display&family=Titillium+Web&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    /*width: 100%;
+    height: auto;*/
+    background-image: none;
+}
+
+.cardapio {
+    padding: 0 10 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.cabecalho-cardapio {
+    background-color: #fff200;
+    color: #000000;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.cabecalho-cardapio>h1 {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.cabecalho-cardapio>h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.h3Centro {
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.oitenta {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 5px 10px 20px 10px;
+}
+
+.itens-cardapio {
+    background-color: rgb(211, 209, 209);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 15px;
+    position: relative;
+    /*cursor: pointer;*/
+    transition: transform 300ms, background-color 300ms;
+    animation: pulse 500ms;
+}
+
+.itens-cardapio:hover, .itens-cardapio.active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.itens-detalhes {
+    padding: 10px;
+}
+
+.itens-detalhes > h4 > span {
+    float: right;
+}
+
+.card-time {
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+.btnPedir {
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 30%;
+    padding: 5px;
+    margin: 3px auto;
+    cursor: pointer;
+}
